@@ -1,9 +1,10 @@
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
+    <div className="mx-auto w-full h-screen bg-indigo font-sans text-white">
+      <div>
+        Munich
+      </div>
     </div>
   );
 }
