@@ -6,7 +6,7 @@ export const MainSection = ({ forecastData, location }) => {
   const { condition, maxTemperature, minTemperature, temperature, date } = useForecastInfo(forecastData);
 
   return (
-    <section className='grid grid-flow-col auto-cols-max'>
+    <section className='grid grid-flow-col auto-cols-max place-content-center'>
       <div className='px-4'>
         <WeatherConditionImg condition={condition} size='large'/>
       </div>
