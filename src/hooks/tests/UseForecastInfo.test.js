@@ -4,7 +4,6 @@ import { useForecastInfo } from '../UseForecastInfo';
 import dataItem from './fixtures/forecastData.json';
 
 describe('useForecastInfo', () => {
-
   it('return object with desired information', () => {
     const { result } = renderHook(() => useForecastInfo(dataItem))
     expect( result.current).toEqual({
