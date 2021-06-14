@@ -7,11 +7,11 @@ describe('WeatherConditionImg', () => {
     const { container } = render(<WeatherConditionImg condition='Clear' />);
     expect(container.querySelector('svg')).toBeInTheDocument();
     expect(container.querySelector('.text-yellow')).toBeInTheDocument();
-    expect(container.querySelector('.w-16')).toBeInTheDocument();
+    expect(container.querySelector('.w-20')).toBeInTheDocument();
   });
   it('when condition is Clear and using small size', () => {
     const { container } = render(<WeatherConditionImg condition='Clear' size='small' />);
-    expect(container.querySelector('.w-16')).toBeInTheDocument();
+    expect(container.querySelector('.w-20')).toBeInTheDocument();
   });
   it('when condition is Clear and using large size', () => {
     const { container } = render(<WeatherConditionImg condition='Clear' size='large' />);
@@ -21,7 +21,7 @@ describe('WeatherConditionImg', () => {
     const { container } = render(<WeatherConditionImg condition='Rain' size='small' />);
     expect(container.querySelector('svg')).toBeInTheDocument();
     expect(container.querySelector('.text-yellow')).toBeInTheDocument();
-    expect(container.querySelector('.w-16')).toBeInTheDocument();
+    expect(container.querySelector('.w-20')).toBeInTheDocument();
   });
   it('when condition is not Clear and using large size', () => {
     const { container } = render(<WeatherConditionImg condition='Rain' size='big' />);
