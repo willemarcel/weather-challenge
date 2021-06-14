@@ -23,6 +23,12 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Roboto', 'sans-serif'],
+    },
+    extend: {
+      fontSize: {
+        '10xl': ['10rem', 1.1]
+      }
+
     }
   },
   variants: {

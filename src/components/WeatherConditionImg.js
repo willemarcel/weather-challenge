@@ -1,5 +1,5 @@
-import { ReactComponent as Sun } from './sun.svg';
-import { ReactComponent as Cloud } from './cloud.svg';
+import { ReactComponent as Sun } from './assets/sun.svg';
+import { ReactComponent as Cloud } from './assets/cloud.svg';
 
 /**
  * Renders a SVG representing the weather condition.
@@ -8,7 +8,7 @@ import { ReactComponent as Cloud } from './cloud.svg';
  * Available size options are large and small (default).
 */
 export const WeatherConditionImg = ({ condition, size='small' }) => {
-  const sizeClass = size === 'small' ? 'w-16' : 'w-24';
+  const sizeClass = size === 'small' ? 'w-16' : 'w-52';
 
   if (condition === 'Clear') {
     return <Sun className={`text-yellow ${sizeClass}`} />
