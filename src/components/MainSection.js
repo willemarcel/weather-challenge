@@ -6,9 +6,9 @@ export const MainSection = ({ forecastData, location }) => {
   const { condition, maxTemperature, minTemperature, temperature, date } = useForecastInfo(forecastData);
 
   return (
-    <div className='grid grid-flow-col auto-cols-max'>
+    <section className='grid grid-flow-col auto-cols-max'>
       <div className='px-4'>
-        <WeatherConditionImg condition={'Clear'} size='large'/>
+        <WeatherConditionImg condition={condition} size='large'/>
       </div>
       <div className='px-16'>
         <div>
@@ -30,6 +30,6 @@ export const MainSection = ({ forecastData, location }) => {
           <Title level={2}>{ date && date.day }</Title>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
